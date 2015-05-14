@@ -5,7 +5,7 @@ KataCurl ElasticSearch Scripts
 * tape> export ES_URL_FROM="http://url_es_src:9200"
 * tape> export ES_URL_TO="http://url_es_dest:9200"
 * tape> export ES_INDEX=test
-* tape> es.mappings.KataCurl.sh
+* tape> /bin/sh -c es.mappings.katacurl.sh
 
 ### LICENCE ###
 * GNU
