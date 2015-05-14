@@ -14,7 +14,7 @@ KataCurl ElasticSearch Scripts
 
 ### COMPATIBILITY
 
-KataCurl Version | Release Date | Component  
+KataCurl version | Release Date | Component version
 ------------------ | ------------ | ------------------- 
 0.1.5-5            | 2015-05-14   | [ES 1.5.2](https://www.elastic.co/downloads/elasticsearch)
 0.1.5-5            | 2015-05-14   | [JQ 1.5rc1](http://stedolan.github.io/jq)
