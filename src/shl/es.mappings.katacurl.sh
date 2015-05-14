@@ -8,7 +8,12 @@ cat <<EOF
 # tape> export ES_URL_FROM="http://url_es_src:9200"
 # tape> export ES_URL_TO="http://url_es_dest:9200"
 # tape> export ES_INDEX=test
+#
+# tape> export ES_INDEX_SRC=test1    #OPTION
+# tape> export ES_INDEX_DEST=test1   #OPTION
+#
 # tape> /bin/sh -c es.mappings.katacurl.sh
+#
 # =================================================
 EOF
 
