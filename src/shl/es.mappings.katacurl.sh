@@ -9,8 +9,8 @@ cat <<EOF
 # tape> export ES_URL_TO="http://url_es_dest:9200"
 # tape> export ES_INDEX=test
 #
-# tape> export ES_INDEX_SRC=test1    #OPTION
-# tape> export ES_INDEX_DEST=test1   #OPTION
+# tape> export ES_INDEX_FROM=test1 #OPTION
+# tape> export ES_INDEX_TO=test1   #OPTION
 #
 # tape> /bin/sh -c es.mappings.katacurl.sh
 #
@@ -37,8 +37,8 @@ ES_URL_FROM=${ES_URL_FROM:-$ES_URL_DEFAULT}; echo "ENV ES_URL_FROM=${ES_URL_FROM
 ES_URL_TO=${ES_URL_TO:-$ES_URL_DEFAULT}; echo "ENV ES_URL_TO=${ES_URL_TO}";
 ES_INDEX_DEFAULT=test; echo "ENV ES_INDEX_DEFAULT=${ES_INDEX_DEFAULT}";
 ES_INDEX=${ES_INDEX:-$ES_INDEX_DEFAULT}; echo "ENV ES_INDEX=${ES_INDEX}";
-ES_INDEX_SRC=${ES_INDEX_SRC:-$ES_INDEX}; echo "ENV ES_INDEX_SRC=${ES_INDEX_SRC}";
-ES_INDEX_DEST=${ES_INDEX_DEST:-$ES_INDEX}; echo "ENV ES_INDEX_DEST=${ES_INDEX_DEST}";
+ES_INDEX_FROM=${ES_INDEX_FROM:-$ES_INDEX}; echo "ENV ES_INDEX_FROM=${ES_INDEX_FROM}";
+ES_INDEX_TO=${ES_INDEX_TO:-$ES_INDEX}; echo "ENV ES_INDEX_TO=${ES_INDEX_TO}";
 
 
 [[ "${ES_URL_FROM}" == "${ES_URL_TO}" ]] && (
@@ -84,8 +84,8 @@ function require_jq {
 }
 
 function es-copy-mapping-curl {
-  ARG1=${1:-$ES_INDEX_SRC};    #index source
-  ARG2=${2:-$ES_INDEX_DEST};   #index destination
+  ARG1=${1:-$ES_INDEX_FROM};    #index source
+  ARG2=${2:-$ES_INDEX_TO};   #index destination
 
   echo -e "\n#COPY SETTINGS,MAPPINGS,ALIASES,WARNERS $ARG1 from url_source to url_dest";
   
@@ -115,8 +115,8 @@ function es-copy-mapping-curl {
 }
 
 function es-process-data {
-  ARG1=${1:-$ES_INDEX_SRC};    #index source
-  ARG2=${2:-$ES_INDEX_DEST};   #index destination
+  ARG1=${1:-$ES_INDEX_FROM};    #index source
+  ARG2=${2:-$ES_INDEX_TO};   #index destination
 
   echo -e "\n#PROCESS\n";
 
