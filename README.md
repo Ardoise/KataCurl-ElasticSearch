@@ -2,12 +2,12 @@
 KataCurl ElasticSearch Scripts
 
 ### USAGE ###
-* tape> export ES_URL_FROM="http://url_es_src:9200"
-* tape> export ES_URL_TO="http://url_es_dest:9200"
-* tape> export ES_INDEX=test
-* tape> export ES_INDEX_SRC=test   #OPTION
-* tape> export ES_INDEX_DEST=test2 #OPTION
-* tape> /bin/sh -c es.mappings.katacurl.sh
+-  $ export ES_URL_FROM="http://url_es_src:9200"
+-  $ export ES_URL_TO="http://url_es_dest:9200"
+-  $ export ES_INDEX=test
+-  $ export ES_INDEX_SRC=test   #OPTION
+-  $ export ES_INDEX_DEST=test2 #OPTION
+-  $ /bin/sh -c es.mappings.katacurl.sh
 
 ### LICENCE ###
 * GNU
