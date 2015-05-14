@@ -1,12 +1,12 @@
 {
   "es": {
     "url": {
-      "src": "http://127.0.0.1:9200",
-      "dest": "http://127.0.1.1:9200"
+      "from": "http://127.0.0.1:9200",
+      "to": "http://127.0.1.1:9200"
     },
     "index": {
-      "src": "test",
-      "dest": "test"
+      "from": "test",
+      "to": "test"
     }
   }
 }
