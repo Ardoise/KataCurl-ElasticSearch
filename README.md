@@ -6,6 +6,9 @@ KataCurl ElasticSearch Scripts
 * tape> export ES_URL_TO="http://url_es_dest:9200"
 * tape> export ES_INDEX=test
 * tape> /bin/sh -c es.mappings.katacurl.sh
+*  
+* tape> export ES_INDEX_SRC=test  #OPTION
+* tape> export ES_INDEX_DEST=test2 #OPTION
 
 ### LICENCE ###
 * GNU
@@ -16,5 +19,7 @@ KataCurl ElasticSearch Scripts
 ### Build 0.1.5-5 ###
 Release Date: 14 may 2015
 
+* add option index src and index dest
+* add shl/json/sample.json (TODO)
 * es.katacurl.mappings.sh
 
