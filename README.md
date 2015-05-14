@@ -5,9 +5,9 @@ KataCurl ElasticSearch Scripts
 -  $ export ES_URL_FROM="http://url_es_src:9200"
 -  $ export ES_URL_TO="http://url_es_dest:9200"
 -  $ export ES_INDEX=test
--  $ export ES_INDEX_SRC=test   #OPTION
--  $ export ES_INDEX_DEST=test2 #OPTION
--  $ /bin/sh -c es.mappings.katacurl.sh
+-  *$ export ES_INDEX_SRC=test   #OPTION*
+-  *$ export ES_INDEX_DEST=test2 #OPTION*
+-  **$ /bin/sh -c es.mappings.katacurl.sh**
 
 ### LICENCE ###
 * GNU
