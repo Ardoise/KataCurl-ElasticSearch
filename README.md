@@ -1,4 +1,4 @@
-# KataCurl-ElastiSearch
+# KataCurl-ElasticSearch
 KataCurl ElasticSearch Scripts
 
 ### USAGE ###
