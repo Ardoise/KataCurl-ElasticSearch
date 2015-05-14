@@ -12,6 +12,12 @@ KataCurl ElasticSearch Scripts
     
     /bin/sh -c es.mappings.katacurl.sh
 
+### Compatibility
+
+KataCurl Version | Release Date | Elastic compatibility | Notes | Status
+------------------ | ------------ | ------------------- | ----- | ------
+0.1.5-5            | 2015-05-14   | [ES 1.5.2](https://www.elastic.co/downloads/elasticsearch)                    |       |
+
 ### LICENCE ###
 * GNU GENERAL PUBLIC LICENSE 2
 
