@@ -84,8 +84,8 @@ function require_jq {
 }
 
 function es-copy-mapping-curl {
-  ARG1=${1:-$ES_INDEX_FROM};    #index source
-  ARG2=${2:-$ES_INDEX_TO};   #index destination
+  local ARG1=${1:-$ES_INDEX_FROM};    #index source
+  local ARG2=${2:-$ES_INDEX_TO};   #index destination
 
   echo -e "\n#COPY SETTINGS,MAPPINGS,ALIASES,WARNERS $ARG1 from url_source to url_dest";
   
@@ -115,15 +115,15 @@ function es-copy-mapping-curl {
 }
 
 function es-process-data {
-  ARG1=${1:-$ES_INDEX_FROM};    #index source
-  ARG2=${2:-$ES_INDEX_TO};   #index destination
+  local ARG1=${1:-$ES_INDEX_FROM};    #index source
+  local ARG2=${2:-$ES_INDEX_TO};   #index destination
 
   echo -e "\n#PROCESS\n";
 
   [ -z "$ARG1" ] && exit 1
   [ -z "$ARG2" ] && exit 1
   
-  es-copy-mapping-curl ${ARG1} ${ARG2};   #copy MAPPING from ${ES_URL_FROM}/${ARG1} to ${ES_URL_TO}/${ARG2}
+  es-copy-mapping-curl "${ARG1}" "${ARG2}";   #copy MAPPING from ${ES_URL_FROM}/${ARG1} to ${ES_URL_TO}/${ARG2}
 }
 
 # ==== MAIN ===

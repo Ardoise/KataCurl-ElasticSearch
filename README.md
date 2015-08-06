@@ -25,6 +25,11 @@ KataCurl version | Release Date | Component version
 ### CREDITS
 * http://stedolan.github.io/jq/
 
+### Build 0.1.5-8
+Release Date: 06 august 2015
+
+* fix function var local default  => force local
+
 ### Build 0.1.5-5
 Release Date: 14 may 2015
 
